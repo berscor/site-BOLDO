@@ -1,0 +1,205 @@
+
+ol, ul {
+    list-style: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/* manrope-regular - latin */
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/manrope-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/manrope-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* manrope-700 - latin */
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/manrope-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/manrope-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    height: 100%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.wrapper{
+    max-width: 1200px;
+    height: 798px;
+    margin: 0 auto;
+}
+
+/*Header styles*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.header__item{
+    margin-right: 40px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .7;
+}
+.logIn__submit{
+    background: white;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0A2640;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 24px;
+}
+.logIn__submit:hover, .logIn__submit:focus, .logIn__submit:active{
+    background: #a3d7ff;
+}
+
+/*Intro styles*/
+
+.main{
+    align-items: center;
+    background-color: #0A2640;
+}
+/*.circle{*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    border-radius: 50%;*/
+/*    width: 1293px;*/
+/*    height: 1293px;*/
+/*    left: 777px;*/
+/*    top: -789px;*/
+/*    background-color: #1C3D5B;*/
+/*}*/
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 162px;
+}
+.lb{
+    width: 567px;
+    height: 310px;
+    margin: auto 0;
+}
+.intro_title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    width: 567px;
+    height: 138px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.intro_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    width: 567px;
+    height: 56px;
+    padding-top: 16px;
+    margin: auto;
+    color: #F1F1F1;
+}
+.buttons{
+    width: 458px;
+    height: 60px;
+    position: absolute;
+    padding-top: 56px;
+    display: flex;
+}
+.Buy__submit{
+    background: #65E4A3;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0A2640;
+    width: 247px;
+    height: 60px;
+    border: none;
+    border-radius: 56px;
+    margin-right: 24px;
+}
+.Explore__submit{
+    background: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    width: 187px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 56px;
+}
+.Explore__submit:hover, .Explore__submit:focus, .Explore__submit:active{
+    opacity: 70%;
+}
+.Buy__submit:hover, .Buy__submit:focus, .Buy__submit:active{
+    opacity: 70%;
+}
+.hero__graphics{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider{
+    justify-content: center;
+    margin-top: 89px;
+    display: flex;
+}
+.\.slide_logo{
+    margin: auto;
+}
+.grad{
+    background: linear-gradient(90deg, #0A2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0A2640 97.87%);
+    width: 1173px;
+    height: 48px;
+    position: absolute;
+}
